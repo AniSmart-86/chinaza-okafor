@@ -146,7 +146,7 @@ export const PORTFOLIO_DATA = {
         "18% margin improvement by eliminating unprofitable discount tiers",
         "Identified top 5 high-converting SKUs driving 62% of total net profits"
       ],
-      image: "/images/car_dashboard.JPG",
+      image: "/images/Car_dashboard.JPG",
       liveUrl: "https://app.powerbi.com",
       githubUrl: "https://github.com/chinaza-okafor/sales-performance-analytics",
       process: {
@@ -165,7 +165,7 @@ export const PORTFOLIO_DATA = {
       businessImpact: "Empowered the executive team to reduce weekly reporting preparation time from 12 hours to 0 hours via automated refresh, boosting operational efficiency."
     },
     {
-      id: "customer-churn-retention-analysis",
+      id: "Royal Hotel-retention-analysis",
       title: "Customer Churn Risk & Retention Intelligence Dashboard",
       category: "SQL",
       shortDescription: "End-to-end data analytics project combining SQL risk queries and interactive visual dashboards to predict customer attrition and increase customer retention.",
@@ -210,7 +210,7 @@ export const PORTFOLIO_DATA = {
         "Automated financial forecasting reduced scenario modeling turnarounds from 3 days to 15 minutes",
         "Forecasted cash flow bottleneck in Q4, enabling proactive credit line securing"
       ],
-      image: "/images/sales_dashboard.JPG",
+      image: "/images/Sales_dashboard.JPG",
       liveUrl: "https://office.com",
       githubUrl: "https://github.com/chinaza-okafor/excel-financial-forecasting",
       process: {
