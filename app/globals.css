@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #f8fafc;
+  --card-bg: rgba(12, 18, 15, 0.85);
+  --card-border: rgba(16, 185, 129, 0.2);
+  --accent-green: #10b981;
+  --accent-emerald: #22c55e;
+  --accent-mint: #34d399;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #000000;
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Analytical Grid Overlay Background with Subtle Green Tint */
+.bg-analytics-grid {
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.14) 0%, rgba(0, 0, 0, 0) 65%);
+}
+
+.bg-radial-glow-secondary {
+  background: radial-gradient(circle at 80% 60%, rgba(34, 197, 94, 0.1) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+/* Glassmorphism Cards with Black/Dark Base & Emerald Glow Borders */
+.glass-panel {
+  background: rgba(10, 15, 12, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(16, 185, 129, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px -10px rgba(16, 185, 129, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #18221c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
