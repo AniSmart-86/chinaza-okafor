@@ -67,7 +67,7 @@ export default function Navbar() {
                 China<span className="text-emerald-400">za</span>
               </span>
               <span className="text-[10px] font-mono tracking-widest text-emerald-500/80 uppercase">
-                BI & Analytics
+                 Analytics
               </span>
             </div>
           </a>

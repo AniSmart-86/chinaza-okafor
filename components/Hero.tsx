@@ -13,7 +13,8 @@ import {
   FolderKanban,
   Zap,
   Database,
-  BarChart2
+  BarChart2,
+  FileSpreadsheet
 } from "lucide-react";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 
@@ -39,12 +40,7 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="lg:col-span-7 flex flex-col items-start"
           >
-            {/* Status Pill Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-medium mb-6">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="w-2 h-2 rounded-full bg-emerald-400 -ml-4" />
-              <span>Available for BI & Analytics Projects</span>
-            </div>
+          
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-4">
@@ -68,7 +64,7 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
               <a
                 href="#projects"
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm bg-linear-to-r from-emerald-500 via-green-500 to-emerald-400 text-black shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 transition-all group"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-2 md:px-6 py-3.5 rounded-xl font-bold text-xs bg-linear-to-r from-emerald-500 via-green-500 to-emerald-400 text-black shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105 transition-all group"
               >
                 <FolderKanban className="w-4 h-4 text-black" />
                 <span>View My Work</span>
@@ -77,10 +73,10 @@ export default function Hero() {
               <a
                 href={client.resumeUrl}
                 download="Chinaza_Okafor_Data_Analyst_Resume.pdf"
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl font-semibold text-sm bg-zinc-950 hover:bg-zinc-900 text-zinc-200 hover:text-white border border-zinc-800 hover:border-emerald-500/40 shadow-lg hover:scale-105 transition-all group"
+                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2.5 px-2 md:px-6 py-3.5 rounded-xl font-semibold text-xs bg-zinc-950 hover:bg-zinc-900 text-zinc-200 hover:text-white border border-zinc-800 hover:border-emerald-500/40 shadow-lg hover:scale-105 transition-all group"
               >
                 <Download className="w-4 h-4 text-emerald-400 group-hover:translate-y-0.5 transition-transform" />
-                <span>Download Resume</span>
+                <span>Download CV</span>
               </a>
             </div>
 
@@ -104,7 +100,7 @@ export default function Hero() {
                   <BarChart2 className="w-4 h-4 text-green-400" /> Power BI
                 </span>
                 <span className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
-                  <Zap className="w-4 h-4 text-emerald-300" /> Excel BI
+                  <FileSpreadsheet className="w-4 h-4 text-emerald-300" /> Excel
                 </span>
               </div>
             </div>
@@ -138,7 +134,7 @@ export default function Hero() {
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-black/90 backdrop-blur-md border border-emerald-500/30 flex items-center justify-between">
                   <div>
                     <p className="text-xs font-bold text-white">Chinaza Okafor</p>
-                    <p className="text-[10px] text-emerald-400 font-mono">BI & Analytics Specialist</p>
+                    <p className="text-[10px] text-emerald-400 font-mono"> Analytics Specialist</p>
                   </div>
                   <div className="flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/30">
                     <CheckCircle2 className="w-3 h-3" /> Verified
@@ -150,7 +146,7 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
+                className="absolute hidden md:block -top-4 -right-4 sm:-top-6 sm:-right-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
               >
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                   <TrendingUp className="w-5 h-5" />
@@ -167,7 +163,7 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
+                className="absolute hidden md:block -top-4 -left-4 sm:-top-6 sm:-left-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
               >
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                   <Award className="w-5 h-5" />
@@ -184,7 +180,7 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -bottom-6 -right-4 sm:-bottom-6 sm:-right-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
+                className="absolute hidden md:block -bottom-6 -right-4 sm:-bottom-6 sm:-right-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
               >
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                   <FolderKanban className="w-5 h-5" />
@@ -201,7 +197,7 @@ export default function Hero() {
               <motion.div
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
-                className="absolute -bottom-6 -left-4 sm:-bottom-6 sm:-left-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
+                className="absolute hidden md:block -bottom-6 -left-4 sm:-bottom-6 sm:-left-6 p-3.5 rounded-2xl glass-panel shadow-xl flex items-center gap-3 border border-emerald-500/30 bg-[#0c120f]/95 backdrop-blur-md"
               >
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                   <Lightbulb className="w-5 h-5" />

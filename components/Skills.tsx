@@ -123,22 +123,7 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Highlighted Tool Badges Footer */}
-        <div className="mt-16 p-6 rounded-2xl glass-panel border border-zinc-800 flex flex-wrap items-center justify-between gap-4 bg-[#0c120f]/90">
-          <span className="text-xs font-mono font-bold text-zinc-400 uppercase tracking-widest">
-            Recognized Analytical Technologies:
-          </span>
-          <div className="flex flex-wrap items-center gap-3">
-            {["Power BI", "PostgreSQL", "MySQL", "Excel Power Query", "DAX", "Python Pandas", "Tableau", "VBA Macros", "Jupyter"].map((tool) => (
-              <span
-                key={tool}
-                className="px-3 py-1.5 rounded-xl bg-zinc-950 border border-zinc-800 text-xs font-mono text-emerald-400 font-semibold hover:border-emerald-500/40 hover:text-white transition-colors"
-              >
-                {tool}
-              </span>
-            ))}
-          </div>
-        </div>
+    
 
       </div>
     </section>
